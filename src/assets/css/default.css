@@ -1,0 +1,485 @@
+body{
+  background-color: #f5f5f5;
+}
+
+.row.default-title{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.row.default-title > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.default-title-big {
+  font-size: 5em;
+  color: #008B8B;
+  font-weight: 800;
+  padding-right: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all .3s;
+  font-family: 'Source Sans Pro','Open Sans',sans-serif;
+  /*font-family: 'Fantasy';*/
+}
+
+
+.default-title-small {
+    color: coral;
+    font-size: 1.7rem;
+    font-weight: 800;
+    padding-right: 15px;
+    text-transform: uppercase;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    font-family: 'Source Sans Pro','Open Sans',sans-serif;
+    letter-spacing: 3px;
+}
+
+
+.default-title-hr{
+  padding-top: 40px;
+  margin-top: 10px;
+  border-top: 5px dashed oldlace;
+}
+
+.default-container{
+  margin-top: 15vh;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 850px;
+  height: 49vh;
+  padding: 20px;
+  margin-bottom: 35vh;
+}
+
+#register-company .panel,
+#signin-account .panel,
+#register-account .panel{
+  /*min-width: 350px;*/
+  height: auto;
+  /*height: 40vh;*/
+  width: 100%;
+}
+
+#register-company .panel-title,
+#signin-account .panel-title,
+#register-account .panel-title{
+  color: grey;
+  font-weight: 500;
+  padding: 5px;
+}
+
+#register-company.panel-default,
+#signin-account.panel-default,
+#register-account.panel-default{
+    min-height: 320px;
+}
+
+#register-company.panel-default > .panel-heading,
+#signin-account.panel-default > .panel-heading,
+#register-account.panel-default > .panel-heading{
+    color: #333;
+    border-color: #ddd;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+}
+
+#register-company .panel-body,
+#signin-account .panel-body,
+#register-account .panel-body{
+  padding: 10px;
+}
+
+.input-group{
+  margin-bottom: 20px;
+}
+
+.fa-big i{
+  font-size: 22px;
+}
+
+.fa-small i{
+  font-size: 15px;
+  padding: 0 3px;
+}
+
+.check-field{
+    background-color: transparent;
+    color: green;
+}
+
+.check-field::after{
+    color: green;
+    font-family: FontAwesome;
+  	content: "\f00c";
+}
+
+
+.input-group-addon.check-field{
+    content: normal;
+}
+
+.form-control.with-check-field{
+  border-right: none;
+  border-radius: 5px !important;
+  font-size: inherit;
+}
+
+/*.fa.fa-check{
+  right: 5px;
+  padding-left: 3px;
+  border-left-width: 1px;
+  border-left-style: solid;
+
+}*/
+
+
+
+/*.smart-form {
+    margin: 0;
+    outline: none;
+    color: #666;
+    position: relative;
+}*/
+
+
+.smart-form fieldset {
+    display: block;
+    padding: 5px 14px 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    position: relative;
+}
+
+
+.smart-form section {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+
+.smart-form *, .smart-form *:after,
+.smart-form *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+}
+
+/*article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}*/
+
+.smart-form .input,
+.smart-form .select,
+.smart-form .textarea,
+.smart-form .radio,
+.smart-form .checkbox,
+.smart-form .toggle,
+.smart-form .button {
+    position: relative;
+    display: block;
+    font-weight: 400;
+}
+
+/*.smart-form *, .smart-form *:after,
+.smart-form *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+}*/
+
+.smart-form .icon-append, .smart-form .icon-prepend {
+    color: #A2A2A2;
+}
+
+.smart-form .input input,
+.smart-form .select select,
+.smart-form .textarea textarea,
+.smart-form .radio i,
+.smart-form .checkbox i,
+.smart-form .toggle i,
+.smart-form .icon-append,
+.smart-form .icon-prepend {
+    border-color: #BDBDBD;
+    transition: border-color 0.3s;
+    -o-transition: border-color 0.3s;
+    -ms-transition: border-color 0.3s;
+    -moz-transition: border-color 0.3s;
+    -webkit-transition: border-color 0.3s;
+}
+
+.smart-form .icon-append {
+    right: 5px;
+    padding-left: 3px;
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+
+
+.smart-form .icon-append,
+.smart-form .icon-prepend {
+    position: absolute;
+    top: 5px;
+    width: 22px;
+    height: 22px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+}
+
+/*.smart-form .input .icon-append + input,
+.smart-form .textarea .icon-append + textarea {
+    padding-right: 37px;
+}*/
+
+.smart-form .input input,
+.smart-form .select select,
+.smart-form .textarea textarea {
+    display: block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    padding: 5px 10px;
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0;
+    background: #fff;
+    font: 13px/16px 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #404040;
+    appearance: normal;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+
+/*.smart-form .tooltip-bottom-right {
+    top: 100%;
+    margin-top: 15px;
+}*/
+
+.smart-form .tooltip {
+    position: absolute;
+    z-index: 99999;
+    left: -9999px;
+    padding: 2px 8px 3px;
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    opacity: 0;
+    transition: margin 0.3s, opacity 0.3s;
+    -o-transition: margin 0.3s, opacity 0.3s;
+    -ms-transition: margin 0.3s, opacity 0.3s;
+    -moz-transition: margin 0.3s, opacity 0.3s;
+    -webkit-transition: margin 0.3s, opacity 0.3s;
+}
+
+.panel-footer footer {
+    text-align: right;
+    /*padding: 7px 14px 15px;*/
+    /*border-top: 1px solid rgba(0, 0, 0, 0.1);*/
+}
+
+/*.smart-form footer .btn {
+    float: right;
+    height: 31px;
+    margin: 10px 0 0 5px;
+    padding: 0 22px;
+    font: 300 15px/29px 'Open Sans', Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}*/
+
+/*.smart-form .btn {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}*/
+
+/*.smart-form {
+    margin: 0;
+    outline: none;
+    color: #666;
+    position: relative;
+}*/
+
+
+.smart-form .radio,
+.smart-form .checkbox {
+    margin-bottom: 4px;
+    padding-left: 25px;
+    line-height: 25px;
+    color: #404040;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+/*.smart-form .radio input, .smart-form .checkbox input {
+    position: absolute;
+    left: -9999px;
+}*/
+
+/*.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+    position: absolute;
+    margin-left: -20px;
+}*/
+
+/*input[type=checkbox], input[type=radio] {
+    margin: 4px 0 0;
+    line-height: normal;
+}
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}*/
+
+.smart-form .radio i,
+.smart-form .checkbox i {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    display: block;
+    width: 17px;
+    height: 17px;
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    background: #FFF;
+}
+
+
+.smart-form .checkbox input:checked+i:after,
+.smart-form .radio input:checked+i:after {
+    opacity: 1;
+}
+.smart-form .checkbox input+i:after,
+.smart-form .rating input+label:hover, .smart-form .rating input+label:hover~label, .smart-form .rating input:checked~label {
+    color: #3276B1;
+}
+.smart-form .checkbox input+i:after {
+    content: '\f00c';
+    top: -1px;
+    left: 1px;
+    width: 15px;
+    height: 15px;
+    font: 400 16px/19px FontAwesome;
+    text-align: center;
+}
+.smart-form .checkbox input+i:after,
+.smart-form .radio input+i:after {
+    position: absolute;
+    opacity: 0;
+    transition: opacity .1s;
+    -o-transition: opacity .1s;
+    -ms-transition: opacity .1s;
+    -moz-transition: opacity .1s;
+    -webkit-transition: opacity .1s;
+}
+
+
+.btn-create-company,
+.btn-create-account {
+    color: #fff;
+    background-color: coral;
+    padding: 10px 0 10px;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid transparent;
+}
+
+.btn-create-company:hover,
+.btn-create-account:hover{
+    color: coral;
+    background-color: white;
+    border: 1px solid coral;
+    font-weight: 500;
+    transition: all .5s;
+}
+
+
+.btn-create-company:active,
+.btn-create-account:active{
+    /*color: #fff;*/
+    /*background-color: coral;*/
+    font-weight: 500;
+    /*margin-top: 5px;*/
+    transition: all .50s;
+}
+
+/*.btn-create-company:active,
+.btn-create-account:active{
+    color: #fff;
+    background-color: coral;
+    font-weight: 500;
+    transition: all .3s;
+}*/
+
+
+.signin{
+  text-align: center;
+}
+
+.btn-signin{
+  color: white;
+  background-color: #008b8b;
+  padding: 10px 0 10px;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid transparent;
+}
+
+.btn-signin:hover{
+  color: #008b8b;
+  background-color: white;
+  border: 1px solid #008b8b;
+  font-weight: 500;
+  transition: all .5s;
+}
+
+
+/*.btn-signin:active,
+.btn-signin:active{
+  color: white;
+  background-color: #008b8b;
+}*/
+
+.btn-signin:active,
+.btn-signin:active{
+  /*color: white;*/
+  /*background-color: #008b8b;*/
+  font-weight: 500;
+  margin-top: 5px;
+  transition: all .50s;
+}
+
+.hr-new-account {
+  margin-top: 27px;
+  /*margin-bottom: 19px;*/
+}
+
+.hr-new-account hr {
+    width: 30%;
+    display: inline-block;
+    margin-bottom: 3px;
+    border-top: 1px solid #1CA2A2;
+}
+
+.hr-new-account span{
+  color: #8C8C8C;
+}
+
+/*hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}*/

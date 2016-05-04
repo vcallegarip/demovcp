@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/google-fonts/AlegreyaSans-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Alegreya Sans Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/google-fonts/AlegreyaSans-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/google-fonts/SourceSansPro-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/google-fonts/SourceSansPro-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/google-fonts/Nunito-Regular.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Nunito Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/google-fonts/Nunito-Bold.ttf') format('opentype');
+}

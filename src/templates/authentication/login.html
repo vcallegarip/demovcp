@@ -1,0 +1,93 @@
+
+<div id="signin-account"  class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Sign In</h3>
+  </div>
+  <div class="panel-body">
+    <form id="loginForm" class="smart-form" role="form" ng-submit="vm.login()">
+      <fieldset>
+        <section>
+          <label class="input"> <i class="icon-append fa fa-envelope-o"></i>
+            <input type="text" ng-model="vm.email" placeholder="Email">
+            <b class="tooltip tooltip-bottom-right">Needed to enter the website</b> </label>
+        </section>
+        <section>
+          <label class="input"> <i class="icon-append fa fa-lock"></i>
+            <input type="password" ng-model="vm.password" placeholder="Password" id="password">
+            <b class="tooltip tooltip-bottom-right">Don't forget your password</b> </label>
+        </section>
+      </fieldset>
+
+      <fieldset style="height: 37px;">
+        <button type="submit" class="btn-signin">
+          Sign In
+        </button>
+      </fieldset>
+
+      <fieldset>
+        <div class="hr-new-account">
+          <hr>
+          <span>&nbsp;New to demovcp?&nbsp;</span>
+          <hr>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <button onclick="changeForm()" class="btn-create-account">
+          Create your demovcp account
+        </button>
+      </fieldset>
+
+    </form>
+  </div>
+</div>
+
+<div id="register-account"  class="panel panel-default hidden">
+  <div class="panel-heading">
+    <h3 class="panel-title">Register an account</h3>
+  </div>
+  <div class="panel-body">
+    <form id="registerAccountForm" class="smart-form" role="form" ng-submit="vm.register_account()">
+      <fieldset>
+        <section>
+          <label class="input"> <i class="icon-append fa fa-envelope-o"></i>
+            <input type="text" ng-model="vm.email" placeholder="Email">
+            <b class="tooltip tooltip-bottom-right">Needed to enter the website</b> </label>
+        </section>
+        <section>
+          <label class="input"> <i class="icon-append fa fa-lock"></i>
+            <input type="password" ng-model="vm.password" placeholder="Password" id="password">
+            <b class="tooltip tooltip-bottom-right">Don't forget your password</b> </label>
+        </section>
+        <section class="register-account">
+          <label class="input"> <i class="icon-append fa fa-lock"></i>
+            <input type="password" ng-model="vm.passwordConfirm" name="passwordConfirm" placeholder="Confirm password">
+            <b class="tooltip tooltip-bottom-right">Don't forget your password</b> </label>
+        </section>
+      </fieldset>
+
+      <fieldset>
+        <section>
+          <label class="checkbox">
+            <input type="checkbox" ng-model="vm.hasCompany" name="hasCompany" id="hasCompany">
+            <i></i>Lorem Ipsum is simply dummy text</label>
+        </section>
+        <section class="companyCode hidden">
+          <label class="input"> <i class="icon-append fa fa-lock"></i>
+            <input type="text" ng-model="vm.companyCode" name="companyCode" placeholder="Company Code">
+            <b class="tooltip tooltip-bottom-right">Don't forget your password</b> </label>
+        </section>
+      </fieldset>
+
+      <fieldset>
+        <button type="submit" class="btn-create-account">
+          Create your demovcp account
+        </button>
+      </fieldset>
+      <br>
+      <fieldset>
+        <p>Already have an account? <a onclick="changeForm()" href="/">Sign in</a></p>
+      </fieldset>
+    </form>
+  </div>
+</div>
